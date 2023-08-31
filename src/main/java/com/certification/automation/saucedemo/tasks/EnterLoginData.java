@@ -15,14 +15,12 @@ public class EnterLoginData implements Task {
 
         this.dataLogin = dataLogin;
     }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(Enter.theValue(dataLogin.getPassword()).into(LoginUserInterface.USERNAME));
         actor.attemptsTo(Enter.theValue(dataLogin.getPassword()).into(LoginUserInterface.PASSWORD));
         actor.attemptsTo(Click.on(LoginUserInterface.LOGIN_BUTTON));
-
     }
     public static EnterLoginData withData(DataLogin dataLogin){
 

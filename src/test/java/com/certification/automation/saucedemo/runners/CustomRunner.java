@@ -38,7 +38,6 @@ public class CustomRunner extends Runner {
             }
         }
     }
-
     @Override
     public void run(RunNotifier notifier) {
         try {

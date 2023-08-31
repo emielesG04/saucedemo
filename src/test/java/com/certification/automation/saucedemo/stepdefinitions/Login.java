@@ -1,6 +1,8 @@
 package com.certification.automation.saucedemo.stepdefinitions;
 
 import com.certification.automation.saucedemo.models.DataLogin;
+import com.certification.automation.saucedemo.questions.LoginCorrect;
+import com.certification.automation.saucedemo.questions.LoginIncorrect;
 import com.certification.automation.saucedemo.tasks.EnterLoginData;
 import com.certification.automation.saucedemo.tasks.OpenBrowser;
 import cucumber.api.java.After;
@@ -41,12 +43,17 @@ public class Login {
       OnStage.theActorInTheSpotlight().attemptsTo(EnterLoginData.withData(dataLogins.get(0)));
     }
 
-    @Then("^the user should see the message Products$")
+    @Then("^the user should see the message (.*)")
     public void theUserShouldSeeTheMessageProducts(String login) {
-        theActorInTheSpotlight().should(seeThat(com.certification.automation.saucedemo.questions.Login.messages(),
+        theActorInTheSpotlight().should(seeThat(LoginCorrect.messages(),
                 org.hamcrest.Matchers.is(login)));
     }
 
+    @Then("^The user should see the following error (.*)")
+    public void TheUserShouldSeeTheFollowingError(String loginIncorrect) {
+        theActorInTheSpotlight().should(seeThat(LoginIncorrect.messages(),
+                org.hamcrest.Matchers.is(loginIncorrect)));
+    }
     @After
     public void closeScenario() {
 

@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-
 public class DataToFeature {
-
     private static List<String> setExcelDataToFeature(File featureFile) throws InvalidFormatException, IOException {
         List<String> fileData = new ArrayList<>();
         try (BufferedReader buffReader = new BufferedReader(

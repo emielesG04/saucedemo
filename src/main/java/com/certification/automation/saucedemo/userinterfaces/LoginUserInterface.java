@@ -13,4 +13,8 @@ public class LoginUserInterface {
     public static final Target LOGIN_BUTTON = Target.
             the("Click on the login button")
             .located(By.id("password"));
+
+    public static final Target LOGIN_ERROR_MESSAGE = Target.
+            the("Describes the login error")
+            .locatedBy("//*[@data-test='error']");
 }

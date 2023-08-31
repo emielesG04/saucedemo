@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-public class Login implements Question<String> {
+public class LoginCorrect implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
@@ -15,9 +15,8 @@ public class Login implements Question<String> {
                 WebElementStateMatchers.isVisible()));
         return Text.of(Inventory.TITLE).viewedBy(actor).asString();
     }
+    public static LoginCorrect messages(){
 
-    public static Login messages(){
-
-        return new Login();
+        return new LoginCorrect();
     }
 }
