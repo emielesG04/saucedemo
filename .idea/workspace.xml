@@ -5,14 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d35fbc87-e131-41f0-a17c-7fda5c13c35b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/models/DataLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/questions/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/tasks/EnterLoginData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/tasks/OpenBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/userinterfaces/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/userinterfaces/LoginUserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/utils/BeforeSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/utils/DataToFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/certification/automation/saucedemo/utils/LectorExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/certification/automation/saucedemo/runners/CustomRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/certification/automation/saucedemo/runners/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/certification/automation/saucedemo/stepdefinitions/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Data/DataLogin.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,16 +60,39 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/elvis/Documents/saucedemo/src/test/resources/features"
+    "last_opened_file_path": "/Users/elvis/Documents/saucedemo/src/test/resources/Data"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+      <recent name="$PROJECT_DIR$/src/test/resources/Data" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.certification.automation.saucedemo.tasks" />
+      <recent name="com.certification.automation.saucedemo.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.certificacion.automatizacion.wappi.questions.pantallainformacioncliente.* and 1 more">
+  <component name="RunManager" selected="JUnit.Login">
+    <configuration name="Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="saucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.certification.automation.saucedemo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.certification.automation.saucedemo.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.certification.automation.saucedemo.runners.Login" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Automatizacion_Wappi" />
       <extension name="coverage">
@@ -72,25 +119,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Automatizacion_Wappi" />
+    <configuration name="login (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="saucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.certification.automation.saucedemo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.certification.automation.saucedemo.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.certification.automation.saucedemo.runners.login" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Automatizacion_Wappi" />
-      <option name="filePath" />
+    <configuration name="login1" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="saucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.certification.automation.saucedemo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.certification.automation.saucedemo.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.certification.automation.saucedemo.runners.Login" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Login" />
       <item itemvalue="JUnit.LoginRunner" />
       <item itemvalue="JUnit.com.certificacion.automatizacion.wappi.questions.pantallainformacioncliente.* and 1 more" />
+      <item itemvalue="JUnit.login1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Login" />
+        <item itemvalue="JUnit.login1" />
         <item itemvalue="JUnit.com.certificacion.automatizacion.wappi.questions.pantallainformacioncliente.* and 1 more" />
         <item itemvalue="JUnit.LoginRunner" />
       </list>

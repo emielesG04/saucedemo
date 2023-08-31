@@ -15,7 +15,7 @@
         <serenity.screenplay.webdriver>2.0.17</serenity.screenplay.webdriver>
         <serenity.screenplay>2.0.17</serenity.screenplay>
         <serenity.cucumber.version>1.9.20</serenity.cucumber.version>
-        <webdriver.driver>chrome</webdriver.driver>
+        <webdriver.driver>firefox</webdriver.driver>
         <poi.version>3.15</poi.version>
     </properties>
     <dependencies>

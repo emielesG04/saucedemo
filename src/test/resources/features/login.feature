@@ -11,9 +11,6 @@ Feature: Login
     Then the user should see the message <message>
 
     Examples: Data
-      | user                   | password      | message |
-      | standard_user          | secret_sauce  | Ofertas |
-      |locked_out_user         | secret_sauce  | Ofertas |
-      | problem_user           | secret_sauce  | Ofertas |
-      | performance_glitch_user| secret_sauce  | Ofertas |
+      | user                                                                      | password                                                               | message |
+      | ##@externaldata@./src/test/resources/Data/DataLogin.xlsx@LoginCorrect@1   | ##@externaldata@./src/test/resources/Data/DataLogin.xlsx@LoginCorrect@2| Products |
 
